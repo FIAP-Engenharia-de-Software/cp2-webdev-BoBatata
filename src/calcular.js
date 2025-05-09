@@ -11,6 +11,20 @@
 
 function calcular(num1, num2, operador) {
   // TODO: implementar função
+  if (isNaN(num1) == true || isNaN(num2) == true)
+    return "Erro: parâmetros inválidos"
+  else if ((num1 == 0 && operador == `/`) && (num2 == 0 && operador == `/`))
+    return "Erro: divisão por zero"
+  else if (operador != `+` || operador != `-` || operador != `*` || operador != `/`)
+    return "Erro: operação inválida"
+  else if (operador == `+`)
+    return num1 + num2
+  else if (operador == `-`)
+    return num1 - num2
+  else if (operador == `*`)
+    return num1 * num2
+  else if (operador == `/`)
+    return num1 / num2
 }
 
 

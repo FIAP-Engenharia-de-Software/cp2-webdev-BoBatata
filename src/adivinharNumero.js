@@ -9,6 +9,10 @@
 
 function adivinharNumero(max, palpite) {
   // TODO: implementar função
+  if (number == palpite)
+    return "Acertou!"
+  else if (number != palpite)
+    return "Errou! Tente novamente!"
 }
 
 

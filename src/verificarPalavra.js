@@ -11,6 +11,12 @@
 
 function verificarPalavra(frase, palavraBusca) {
   // TODO: implementar função
+  frase = frase.trim()
+  palavraBusca = palavraBusca.trim()
+  if (frase.length < 5)
+    return "A frase é muito curta"
+  if (frase.include(palavraBusca.ToLowerCase()))
+    return "A frase contém a palavra de busca"
 }
 
 //NÃO REMOVA O CÓDIGO ABAIXO
